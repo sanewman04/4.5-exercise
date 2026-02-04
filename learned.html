@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What I Learned</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <div class="container mx-auto px-4 py-12">
+        <!-- Header -->
+        <h1 class="text-5xl font-bold text-center text-indigo-900 mb-8">
+            What I Learned
+        </h1>
+
+        <!-- Content -->
+        <div class="bg-white rounded-lg shadow-xl p-8 max-w-3xl mx-auto mb-8">
+            <div class="space-y-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-indigo-900 mb-3">1st Prompt with Claude Haiku 4.5</h2>
+                    <p class="text-gray-700">Create an html page that uses tailwind to style. I want the header to be "Click here for a dog" then below a button that says "Dog!" Below will generate a picture of a dog from an api. Below that picture will be another button that says "What I learned" and it will take you to another html page that is styled the same way. Eventually the pictures will be generate using a seperate javascript file that using an api</p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-indigo-900 mb-3">Claude Haiku 4.5 Response</h2>
+                    <p class="text-gray-700">It created 3 files, the two html and a javascript file. It also styled both with tailwind like I asked. Even though I didn't fully describe what will be in the javascript, it wrote it with the correct api and fetch() call.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold text-indigo-900 mb-3">2nd Prompt with GPT-4.o</h2>
+                    <p class="text-gray-700">I want to add to the website. Next to the dog column I want to add a cat section. Keep the same format such as "Click here for a cat" then generate a random cat pic from an api. Add the same javascript file or make a new one whichever. Also you must use alpine.js</p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-indigo-900 mb-3">GPT-4.o Response</h2>
+                    <p class="text-gray-700">It edited the html to add the cat button and image. It also created a new javascript file for both the cat and dog sections using alpine.js.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold text-indigo-900 mb-3">3rd Prompt with GPT-4.o</h2>
+                    <p class="text-gray-700">So do I need the dog-api.js still</p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold text-indigo-900 mb-3">GPT-4.o Response</h2>
+                    <p class="text-gray-700">It said that I did not need it anymore since it was integrated into the new one.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold text-indigo-900 mb-3">Overall</h2>
+                    <p class="text-gray-700">Both were easy to use and predicted what I was going to ask next. This was only helpful because this was an easy exercise but for more complicated and specific tasks, I would not trust it as much. It did create easy to read javascript but I find that the AI is not always the best at writing easy to read and understand html. Both AI agents used similar responses to my prompt and the same formatting style. I could not tell the difference.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <div class="flex justify-center">
+            <a 
+                href="index.html" 
+                class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-200 transform hover:scale-105"
+            >
+                Back to Dogs
+            </a>
+        </div>
+    </div>
+</body>
+</html>
